@@ -16,7 +16,7 @@
 
     <section class="login">
         <div class="do-login">
-                <form method="POST" action="">
+                <form method="POST">
                         <p>Usuario</p>
                         <input name="user" type="text" required>
                         <p>Senha</p>

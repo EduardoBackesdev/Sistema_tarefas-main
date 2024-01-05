@@ -4,6 +4,7 @@ require './Class/conection.php';
 require './Class/user.php';
 require './Class/newUser.php';
 
+// instancias de objetos
 $conect = new conect();
 $user = new user();
 $newUser = new newUser();

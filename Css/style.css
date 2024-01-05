@@ -29,3 +29,40 @@
     cursor: pointer;
     color: red;
 }
+
+.sectionTask{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.showTask{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.task-one{
+    margin-top: 40px;
+    height: 40px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.task-one div button{
+    background-color: rgb(202, 12, 12);
+    padding: 3px;
+    color: white;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.task-one div .att{
+    background-color: rgb(9, 165, 9);
+    cursor: pointer;
+}
