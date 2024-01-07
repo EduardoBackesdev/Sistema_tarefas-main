@@ -6,8 +6,6 @@ class user{
 private $name = '';
 private $password = '';
 
-
-
 // metodo para logar
 public function login(){
     $conection = new conect();
@@ -17,7 +15,15 @@ public function login(){
     $sql->execute(array($user, $password));
     $this->name = $user;
     $this->password = $password;
+    if($sql->rowCount() == 1){
+        header("location: /app.php");
+    }else{
+        echo '<script>alert("Verifique seu usuario ou senha e tente novamente")</script>';
+    };
+    
 }
+
+
 
 
 }

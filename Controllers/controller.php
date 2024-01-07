@@ -9,14 +9,10 @@ $conect = new conect();
 $user = new user();
 $newUser = new newUser();
 
-
-
 // logar usuario no sistema
     if(isset($_POST['action'])){
         $user->login();
     };
-
-
 
 // cadastrar usuario no banco de dados
     if(isset($_POST['actionNew'])){
