@@ -30,7 +30,7 @@ $deleteTask = new delete();
     }
 
 // deletar task do banco e da tela
-    if(isset($_POST['addTask'])){
+    if(isset($_POST[''])){
         $deleteTask->deleteOne();
     }
     
