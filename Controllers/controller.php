@@ -5,12 +5,14 @@ require './Class/user.php';
 require './Class/newUser.php';
 require './Class/addTask.php';
 require './Class/task.php';
+require './Class/deleteTask.php';
 
 // instancias de objetos
 $conect = new conect();
 $user = new user();
 $newUser = new newUser();
 $addTask = new addTask();
+$deleteTask = new delete();
 
 // logar usuario no sistema
     if(isset($_POST['action'])){
@@ -27,7 +29,10 @@ $addTask = new addTask();
         $addTask->addTaskOne();
     }
 
-// selecionar task no banco e printar na tela
+// deletar task do banco e da tela
+    if(isset($_POST['addTask'])){
+        $deleteTask->deleteOne();
+    }
     
     
 

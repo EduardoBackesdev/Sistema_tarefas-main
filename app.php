@@ -22,36 +22,10 @@
 
     <section>
         <div class="showTask">
-           <!--
-                <div class="task-one">
-                    <p>asdsa</p>
-                        <div>
-                            <button class="att">Att</button>
-                            <button>X</button>
-                        </div>
-                </div>
-                <div class="task-one">
-                    <p></p>
-                        <div>
-                            <button class="att">Att</button>
-                            <button>X</button>
-                        </div>
-                </div>
-                <div class="task-one">
-                    <p></p>
-                        <div>
-                            <button class="att">Att</button>
-                            <button>X</button>
-                        </div>
-                </div>
-                <div class="task-one">
-                    <p></p>
-                        <div>
-                            <button class="att">Att</button>
-                            <button>X</button>
-                        </div>
-                </div>
-            -->
+        <?php
+                $task = new task();
+                $task->select();
+        ?>
         </div>
     </section>
 
