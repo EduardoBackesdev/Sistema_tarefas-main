@@ -1,3 +1,5 @@
+<?php require 'Controllers/controller.php' ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +13,8 @@
     <section class="sectionTask">
         <div class="addTask">
             <form method="POST">
-                <input type="text" placeholder="Escreva sua tarefa">
+                <input name="nameTask" type="text" placeholder="Nome da tarefa">
+                <input name="contentTask" type="text" placeholder="Escreva sua tarefa">
                 <input name="addTask" type="submit" placeholder="adicionar">
             </form>
         </div>

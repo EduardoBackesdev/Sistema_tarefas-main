@@ -16,7 +16,7 @@ public function login(){
     $this->name = $user;
     $this->password = $password;
     if($sql->rowCount() == 1){
-        header("location: /app.php");
+        header("location:app.php");
     }else{
         echo '<script>alert("Verifique seu usuario ou senha e tente novamente")</script>';
     };
